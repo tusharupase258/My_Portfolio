@@ -1,63 +1,77 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
 header {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 10px;
 }
 
-header p {
-    margin: 5px 0;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Section Styles */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styling */
 section {
     padding: 20px;
-    margin: 10px;
-    background-color: white;
+    margin: 20px 0;
+    background: #fff;
     border-radius: 5px;
 }
 
 section h2 {
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Projects */
-.project {
-    margin-bottom: 20px;
+section img {
+    max-width: 100px;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+section p {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80%;
 }
 
-/* Skills */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-/* Footer */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
